@@ -13,8 +13,12 @@ const images = [
   },
 ];
 
-const galleryEl = document.querySelector('.gallery');
-
-const imagesEl = images.map(({ url, alt }) => `<li class='item'><img width='360' src='${url}' alt='${alt}'></li>`).join('');
-galleryEl.insertAdjacentHTML("afterbegin", imagesEl);
-console.log(imagesEl);
+const galleryEl = document.querySelector(".gallery");
+galleryEl.classList.add("t3-gallery");
+const galleryItems = images
+  .map(
+    ({ url, alt }) =>
+      `<li class="t3-item"><img width="250" src="${url}" alt="${alt}"></li>`
+  )
+  .join("");
+galleryEl.insertAdjacentHTML("afterbegin", galleryItems);

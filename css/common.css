@@ -22,3 +22,30 @@ button {
   padding: 8px 12px;
   cursor: pointer;
 }
+
+img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.t3-gallery {
+  display: flex;
+  flex-basis: calc((100% - 10px * (2 - 1)) / 2);
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.t3-item {
+  list-style: none;
+}
+
+#boxes {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+#boxes.reversed {
+  flex-direction: row-reverse;
+}
