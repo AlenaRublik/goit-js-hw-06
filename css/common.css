@@ -39,13 +39,3 @@ img {
 .t3-item {
   list-style: none;
 }
-
-#boxes {
-  display: flex;
-  align-items: center;
-  flex-direction: row;
-}
-
-#boxes.reversed {
-  flex-direction: row-reverse;
-}
